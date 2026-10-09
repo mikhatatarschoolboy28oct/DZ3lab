@@ -4,29 +4,46 @@ class Program
 {
     static void Main()
     {
-        int[] a = new int[10];
-
-        Console.WriteLine("Введите 10 чисел:");
-        for (int i = 0; i < 10; i++)
+        try
         {
-            Console.Write($"Число {i + 1}: ");
-            a[i] = int.Parse(Console.ReadLine());
-        }
+            Console.Write("Введите номер карты k (6..14): ");
+            int k = int.Parse(Console.ReadLine());
 
-        int bad = -1;
+            if (k < 6 || k > 14)
+                throw new ArgumentOutOfRangeException(nameof(k), "Номер карты должен быть от 6 до 14");
 
-        for (int i = 1; i < 10; i++)
-        {
-            if (a[i] <= a[i - 1])
+            string name;
+            switch (k)
             {
-                bad = i + 1;
-                break;
+                case 6:  name = "шестёрка"; break;
+                case 7:  name = "семёрка";  break;
+                case 8:  name = "восьмёрка"; break;
+                case 9:  name = "девятка";  break;
+                case 10: name = "десятка";  break;
+                case 11: name = "валет";    break;
+                case 12: name = "дама";     break;
+                case 13: name = "король";   break;
+                case 14: name = "туз";      break;
+                default: name = "неизвестно"; break;
             }
-        }
 
-        if (bad == -1)
-            Console.WriteLine("Последовательность упорядочена по возрастанию.");
-        else
-            Console.WriteLine($"Последовательность не упорядочена. Первое нарушение: число {bad} ({a[bad - 1]}).");
+            Console.WriteLine($"Достоинство карты: {name}");
+        }
+        catch (FormatException)
+        {
+            Console.WriteLine("Ошибка: введено не число");
+        }
+        catch (OverflowException)
+        {
+            Console.WriteLine("Ошибка: число слишком большое");
+        }
+        catch (ArgumentOutOfRangeException)
+        {
+            Console.WriteLine("Ошибка: номер карты должен быть от 6 до 14");
+        }
+        finally
+        {
+            Console.WriteLine("Работа программы завершена");
+        }
     }
 }

@@ -12,3 +12,4 @@
 /Users/mihailsmirnov/DZ3lab/obj/Debug/net10.0/DZ3lab.pdb
 /Users/mihailsmirnov/DZ3lab/obj/Debug/net10.0/DZ3lab.genruntimeconfig.cache
 /Users/mihailsmirnov/DZ3lab/obj/Debug/net10.0/ref/DZ3lab.dll
+/Users/mihailsmirnov/DZ3lab/obj/Debug/net10.0/DZ3lab.sourcelink.json
