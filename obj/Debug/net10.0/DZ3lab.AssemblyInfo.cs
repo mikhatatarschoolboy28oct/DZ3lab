@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DZ3lab")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+84faed2060bfaedb257901387291c2088cd8046c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a4475013b6c9549d4b360cba6a6240ca3fe91711")]
 [assembly: System.Reflection.AssemblyProductAttribute("DZ3lab")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DZ3lab")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

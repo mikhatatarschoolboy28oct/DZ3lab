@@ -1,40 +1,23 @@
 ﻿using System;
 
 
-    enum Day
-    {
-        Monday=1,
-        Tuesday,
-        Wednesday,
-        Thursday,
-        Friday,
-        Saturday,
-        Sunday
-    }
 class Program
 {
     static void Main()
     {
-        if (int.TryParse(Console.ReadLine(), out int n) && n >= 1 && n <= 7)
+        string[] toys={"Hello Kitty","Barbie doll","Spider-Man","Lego","Ball"};
+        int n=0;
+        foreach(string toy in toys)
         {
-            Day day = (Day)n;
-
-            switch (day)
+            if(toy=="Hello Kitty"||toy=="Barbie doll")
             {
-                case Day.Monday:    Console.WriteLine("понедельник"); break;
-                case Day.Tuesday:   Console.WriteLine("вторник"); break;
-                case Day.Wednesday: Console.WriteLine("среда"); break;
-                case Day.Thursday:  Console.WriteLine("четверг"); break;
-                case Day.Friday:    Console.WriteLine("пятница"); break;
-                case Day.Saturday:  Console.WriteLine("суббота"); break;
-                case Day.Sunday:    Console.WriteLine("воскресенье"); break;
+                n++;
+                
             }
+            
+            
         }
-        else
-        {
-            Console.WriteLine("Ошибка: нужно ввести число от 1 до 7");
-        }
-    }
+        Console.WriteLine($"Количество кукол в сумке:{n}");
 
-    
+    }
 }
