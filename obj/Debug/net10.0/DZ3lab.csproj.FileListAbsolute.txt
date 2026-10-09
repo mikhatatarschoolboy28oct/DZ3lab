@@ -1,0 +1,14 @@
+/Users/mihailsmirnov/DZ3lab/bin/Debug/net10.0/DZ3lab
+/Users/mihailsmirnov/DZ3lab/bin/Debug/net10.0/DZ3lab.deps.json
+/Users/mihailsmirnov/DZ3lab/bin/Debug/net10.0/DZ3lab.runtimeconfig.json
+/Users/mihailsmirnov/DZ3lab/bin/Debug/net10.0/DZ3lab.dll
+/Users/mihailsmirnov/DZ3lab/bin/Debug/net10.0/DZ3lab.pdb
+/Users/mihailsmirnov/DZ3lab/obj/Debug/net10.0/DZ3lab.GeneratedMSBuildEditorConfig.editorconfig
+/Users/mihailsmirnov/DZ3lab/obj/Debug/net10.0/DZ3lab.AssemblyInfoInputs.cache
+/Users/mihailsmirnov/DZ3lab/obj/Debug/net10.0/DZ3lab.AssemblyInfo.cs
+/Users/mihailsmirnov/DZ3lab/obj/Debug/net10.0/DZ3lab.csproj.CoreCompileInputs.cache
+/Users/mihailsmirnov/DZ3lab/obj/Debug/net10.0/DZ3lab.dll
+/Users/mihailsmirnov/DZ3lab/obj/Debug/net10.0/refint/DZ3lab.dll
+/Users/mihailsmirnov/DZ3lab/obj/Debug/net10.0/DZ3lab.pdb
+/Users/mihailsmirnov/DZ3lab/obj/Debug/net10.0/DZ3lab.genruntimeconfig.cache
+/Users/mihailsmirnov/DZ3lab/obj/Debug/net10.0/ref/DZ3lab.dll
