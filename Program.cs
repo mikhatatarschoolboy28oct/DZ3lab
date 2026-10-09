@@ -1,33 +1,40 @@
 ﻿using System;
 
+
+    enum Day
+    {
+        Monday=1,
+        Tuesday,
+        Wednesday,
+        Thursday,
+        Friday,
+        Saturday,
+        Sunday
+    }
 class Program
 {
     static void Main()
     {
-        Console.Write("Введите профессию: ");
-        string input = Console.ReadLine();
-
-        Console.WriteLine(GetDrink(input));
-    }
-
-    static string GetDrink(string input)
-    {
-        switch (input.Trim().ToLower())
+        if (int.TryParse(Console.ReadLine(), out int n) && n >= 1 && n <= 7)
         {
-            case "jabroni":
-                return "Patron Tequila";
-            case "school counselor":
-                return "Anything with Alcohol";
-            case "programmer":
-                return "Hipster Craft Beer";
-            case "bike gang member":
-                return "Moonshine";
-            case "politician":
-                return "Your tax dollars";
-            case "rapper":
-                return "Cristal";
-            default:
-                return "Beer";
+            Day day = (Day)n;
+
+            switch (day)
+            {
+                case Day.Monday:    Console.WriteLine("понедельник"); break;
+                case Day.Tuesday:   Console.WriteLine("вторник"); break;
+                case Day.Wednesday: Console.WriteLine("среда"); break;
+                case Day.Thursday:  Console.WriteLine("четверг"); break;
+                case Day.Friday:    Console.WriteLine("пятница"); break;
+                case Day.Saturday:  Console.WriteLine("суббота"); break;
+                case Day.Sunday:    Console.WriteLine("воскресенье"); break;
+            }
+        }
+        else
+        {
+            Console.WriteLine("Ошибка: нужно ввести число от 1 до 7");
         }
     }
+
+    
 }
